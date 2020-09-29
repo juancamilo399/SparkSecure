@@ -11,8 +11,15 @@ import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
 import java.security.cert.CertificateException;
 
+/**
+ * Clase que describe un cliente Http
+ */
+
 public class HttpClient {
 
+    /**
+     * Inicia el cliente htttp de forma segura
+     */
     public static void init() {
         File trustStoreFile = new File("keystores/myTrustStore");
         char[] trustStorePassword = "123456".toCharArray();
@@ -32,6 +39,11 @@ public class HttpClient {
         }
     }
 
+    /**
+     * retorna la respuesta del servicio usando el cliente http seguro
+     * @return la respuesta del servicio
+     * @throws IOException
+     */
     public static String getService() throws IOException {
         System.out.println("entre");
         URL url = new URL("https://localhost:5002/service");

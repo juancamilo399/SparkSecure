@@ -10,7 +10,7 @@ import java.util.Map;
 import static spark.Spark.*;
 
 /**
- * Web Spark app class
+ * Web Spark app class encargado de implementar la logica de los endpoints para el login y el servicio ofrecido
  * @author Juan Camilo Angel Hernandez
  */
 public class SparkWebApp
@@ -22,9 +22,6 @@ public class SparkWebApp
         secure("keystores/ecikeystore.p12", "123456", null, null);
         Gson gson = new Gson();
         HttpClient.init();
-
-
-
 
         before("auth/*", (req, response) ->{
             req.session(true);
@@ -78,6 +75,10 @@ public class SparkWebApp
 
     }
 
+    /**
+     *
+     * @return Retorna el puerto indicado por el entorno, en caso de no encontrarlo retorna el puerto 4567
+     */
     static int getPort() {
         if (System.getenv("PORT") != null) {
             return Integer.parseInt(System.getenv("PORT"));
