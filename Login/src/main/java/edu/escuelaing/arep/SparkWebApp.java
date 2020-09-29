@@ -56,9 +56,7 @@ public class SparkWebApp
             return "";
         }));
 
-        get("auth/user",((req, res) -> {
-            return req.session().attribute("User");
-        }));
+        get("auth/user",((req, res) -> req.session().attribute("User")));
 
         post("/login",((request, response) -> {
             request.body();
@@ -74,6 +72,8 @@ public class SparkWebApp
             return "";
 
         }));
+
+        get("/auth/service",(request, response) -> HttpClient.getService());
 
 
     }

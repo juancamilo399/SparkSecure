@@ -6,6 +6,11 @@ var api = (function () {
             $("#user").text(res.data);
         })
 
+        axios.get(url+"/auth/service").then(res=>{
+            console.log(res.data);
+            $("#service").text(res.data);
+        })
+
     }
     function login(){
         var user={email:document.getElementById("email").value,password:document.getElementById("password").value}
