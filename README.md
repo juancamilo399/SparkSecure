@@ -65,9 +65,9 @@ The documentation will be generated in target/site/apidocs/index.html.
 
 ## Documentation
 
-View [Documentation Login](https://juancamilo399.github.io/SparkSecure/apidoclogin/index.html)
+View [Documentation Login](https://juancamilo399.github.io/SparkSecure/apidoclogin)
 
-View [Documentation Service](https://juancamilo399.github.io/SparkSecure/apidocservice/index.html)
+View [Documentation Service](https://juancamilo399.github.io/SparkSecure/apidocservice)
 
 
 
