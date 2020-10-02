@@ -69,6 +69,10 @@ View [Documentation Login](https://juancamilo399.github.io/SparkSecure/apidoclog
 
 View [Documentation Service](https://juancamilo399.github.io/SparkSecure/apidocservice)
 
+## Arquitectura
+
+![arq](img/arq.png)
+
 
 
 ## Built With
